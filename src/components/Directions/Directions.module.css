@@ -6,7 +6,6 @@
 }
 
 .directions_number {
-  color: #282b22;
   opacity: 0.5;
   font-weight: 600;
   font-size: 24px;
@@ -16,4 +15,9 @@
   color: #3d4a39;
   font-weight: 600;
   font-size: 24px;
+}
+
+.directions_list {
+    display: flex;
+    justify-content: space-around;
 }
