@@ -1,0 +1,19 @@
+.directions_title {
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 1.23;
+  text-align: center;
+}
+
+.directions_number {
+  color: #282b22;
+  opacity: 0.5;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.directions_descr {
+  color: #3d4a39;
+  font-weight: 600;
+  font-size: 24px;
+}
