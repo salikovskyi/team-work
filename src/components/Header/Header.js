@@ -7,6 +7,6 @@ import css from './Header.module.css'
 export default function Header () {
 
     return (
-        <h1 className={css.title}>pisos</h1>
+        <span className={css.header_logo}>LOGO</span>
     )
 }
