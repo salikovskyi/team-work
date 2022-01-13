@@ -3,3 +3,14 @@
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
 }
+.header {
+    display: flex;
+}
+.header_list {
+    display: flex;
+}
+.header_link {
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+
+}
