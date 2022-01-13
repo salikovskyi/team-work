@@ -39,7 +39,7 @@ export default function Directions() {
                 <img className={css.image}
                   src="#"
                   srcset={`${photo1_mobile} 1x, ${photo1_mobile_2x} 2x`}
-                  alt="popop"
+                  alt="pop"
                 />
               </picture>
         </li>
@@ -58,8 +58,8 @@ export default function Directions() {
                 />
                 <img className={css.image}
                   src="#"
-                  srcset="./images/team/team1-mobile.jpg 1x, ./images/team/team1-mobile2x.jpg 2x"
-                  alt="photo"
+                  srcset={`${photo2_mobile} 1x, ${photo2_mobile_2x} 2x`}
+                  alt="pop"
                 />
               </picture>
           </picture>
@@ -79,8 +79,8 @@ export default function Directions() {
                 />
                 <img className={css.image}
                   src="#"
-                  srcset="./images/team/team1-mobile.jpg 1x, ./images/team/team1-mobile2x.jpg 2x"
-                  alt="photo"
+                  srcset={`${photo3_mobile} 1x, ${photo3_mobile_2x} 2x`}
+                  alt="pop"
                 />
               </picture>
           </picture>
