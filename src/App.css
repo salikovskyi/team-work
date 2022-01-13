@@ -1,0 +1,12 @@
+:root {
+    --main-color: #282B22;
+    --secondary-color: #3e4b3a;
+    --accent-color: #AE7B3C;
+    --secondary-bgc-color: #F3F3F3;
+    --bgc-color: #FFFFFF;
+}
+
+.App {
+    font-family: 'Raleway', sans-serif;
+    color: var(--main-color);
+}
