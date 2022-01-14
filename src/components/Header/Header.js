@@ -36,29 +36,29 @@ export default function Header () {
 
             <nav className={css.header_nav}>
             
-                {/* <ul className={css.header_list}>
+                <ul className={css.header_list}>
                     <li className={css.header_item}>
-                        <a href="" className={css.header_link}>
+                        <a href="#" className={css.header_link}>
                         Напрямки
                         </a>
                     </li>
                     <li className={css.header_item}>
-                        <a href="" className={css.header_link}>
+                        <a href="#" className={css.header_link}>
                         Про компанію
                         </a>
                     </li>
                     <li className={css.header_item}>
-                        <a href="" className={css.header_link}>
+                        <a href="#" className={css.header_link}>
                         Переваги
 
                         </a>
                     </li>
                     <li className={css.header_item}>
-                        <a href="" className={css.header_link}>
+                        <a href="#" className={css.header_link}>
                         Етапи роботи
                         </a>
                     </li>
-                </ul> */}
+                </ul>
             </nav>
             <div className={css.header_auth_nav}>
             <ul className={css.header_social_list}>
