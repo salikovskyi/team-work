@@ -10,3 +10,29 @@
     font-family: 'Raleway', sans-serif;
     color: var(--main-color);
 }
+
+
+.App {
+    padding: 0 15px;
+  }
+  
+  @media screen and (min-width: 320px) {
+    .App {
+      max-width: 320px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  @media screen and (min-width: 600px) {
+    .App {
+      max-width: 600px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .App {
+      max-width: 1200px;
+    }
+  }
+  
