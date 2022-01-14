@@ -24,7 +24,9 @@ export default function Header () {
     }
 
     return (
+        <div className='container'>
         <header className={css.header}>
+            
             <span className={css.header_logo}>
                 <a href={inst} target="_blank" rel="noreferrer">
                 <img src={logo} alt="logo" className={css.header_logo_img}/>
@@ -57,6 +59,9 @@ export default function Header () {
                     </li>
                 </ul> */}
             </nav>
+           
         </header>
+        </div>
+        
     )
 }

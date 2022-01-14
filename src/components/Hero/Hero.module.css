@@ -1,15 +1,22 @@
 .hero_section {
-padding-top: 70px;
-padding-bottom: 124px;
+  padding-top: 70px;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2) -13.19%, rgba(0, 0, 0, 0.85) 94.01%)
+  ,
+  url(../../images/hero/hero-mobile/hero-mobile.jpg);
+  padding-bottom: 15px;
+      background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hero_title {
+  font-family: "Lato", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
   line-height: 120%;
   text-align: center;
   text-transform: uppercase;
+  color: var(--bgc-color);
 }
 .hero_descr {
   font-style: normal;
@@ -18,6 +25,7 @@ padding-bottom: 124px;
   line-height: 145%;
   text-align: center;
   margin-top: 28px;
+  color: var(--bgc-color)
 }
 .hero_button {
   padding: 22px 56px;
@@ -26,11 +34,53 @@ padding-bottom: 124px;
   margin-top: 30px;
   border: none;
   color: #fff;
+  border-radius: 2px;
   background-color: var(--accent-color);
 }
 .hero_button_text {
-    font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 100%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+}
+.hero_button_underline {
+  border: none;
+  height: 1px;
+  background: #fff;
+  margin-top: 62px;
+  margin-bottom: 15px;
+  border-radius: 1px;
+  opacity: 0.4;
+  
+}
+
+/* SLIDE_NUMBERS */
+
+.hero_slide_number {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  opacity: 0.4;
+  border: 1px solid #fff;
+  background-color: transparent;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s
+}
+.hero_slide_number:hover {
+    opacity: 1 ;
+}
+.hero_slide_number:not(:last-child) {
+  margin-right: 26px;
+}
+.hero_slide_number_section {
+  display: flex;
+  justify-content: center;
 }
