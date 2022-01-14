@@ -1,5 +1,5 @@
 import css from './Header.module.css'
-import logo from '../../images/svg/logo.svg'
+import logo from '../../images/logo/logo.png'
 
 // const url = url('instagram.com')
 
@@ -10,11 +10,13 @@ export default function Header () {
 
     return (
         <header className={css.header}>
-            <span className={css.header_logo}>LOGO</span>
+            <span className={css.header_logo}>
+                <img src={logo} alt="logo" className={css.header_logo_img}/>
+            </span>
 
             <nav className={css.header_nav}>
                 <ul className={css.header_list}>
-                    <li className={css.header_item}>
+                    {/* <li className={css.header_item}>
                         <a href="" className={css.header_link}>
                         Напрямки
                         </a>
@@ -34,7 +36,7 @@ export default function Header () {
                         <a href="" className={css.header_link}>
                         Етапи роботи
                         </a>
-                    </li>
+                    </li> */}
                 </ul>
             </nav>
         </header>
