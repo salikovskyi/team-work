@@ -1,29 +1,38 @@
 .directions_title {
   font-weight: 600;
-  font-size: 46px;
-  line-height: 1.23;
+  font-size: 34px;
+  line-height: 1.21;
   text-align: center;
+  margin-bottom: 50px;
+  text-transform: uppercase;
 }
 
 .directions_number {
   opacity: 0.5;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
+  line-height: 1.45;
+  margin-bottom: 20px;
 }
 
 .directions_descr {
   color: #3d4a39;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
+  line-height: 1.45;
+  margin-bottom: 15px;
 }
 
 .directions_list {
-    display: flex;
-    /* justify-content: space-between; */
-    flex-direction: column;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
 }
 
-/* .image {
-    width: 333px;
-    height: 320px;
-} */
+.directions_item:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.image {
+  width: 290px;
+}
