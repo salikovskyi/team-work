@@ -17,7 +17,7 @@ export default function Directions() {
   return (
     <div className="section_big">
     <div className={css.directions_section}>
-      <div className="container">
+      <div className="container section">
         <h2 className={css.directions_title}>Основні напрямки</h2>
         <ul className={css.directions_list}>
           <li className={css.directions_item}>
