@@ -87,3 +87,16 @@
   display: flex;
   justify-content: center;
 }
+
+
+
+
+
+
+/* MEDIA */
+
+@media screen and (min-width: 640px) {
+  .hero_title {
+    font-size: 56px;
+  }
+}
