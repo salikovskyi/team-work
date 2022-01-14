@@ -1,5 +1,5 @@
 import css from './Header.module.css'
-
+import logo from '../../images/svg/logo.svg'
 
 // const url = url('instagram.com')
 
