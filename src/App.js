@@ -3,6 +3,7 @@ import Header from './components/Header/Header';
 import Directions from './components/Directions/Directions';
 import Provide from'./components/Provide/Provide'
 import Hero from './components/Hero/Hero'
+import Project from './components/Project/Project';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero/>
       <Directions/>
       <Provide/>
+      <Project/>
     </div>
   );
 }
