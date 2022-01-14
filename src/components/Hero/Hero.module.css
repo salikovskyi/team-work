@@ -1,6 +1,12 @@
 .hero_section {
-padding-top: 70px;
-padding-bottom: 124px;
+  padding-top: 70px;
+  padding-bottom: 124px;
+}
+.hero_button_underline {
+  border: none;
+  height: 1px;
+  background: #000;
+  margin-top: 62px;
 }
 
 .hero_title {
@@ -26,11 +32,36 @@ padding-bottom: 124px;
   margin-top: 30px;
   border: none;
   color: #fff;
+  border-radius: 2px;
   background-color: var(--accent-color);
 }
 .hero_button_text {
-    font-style: normal;
-font-weight: 700;
-font-size: 16px;
-line-height: 100%;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+/* SLIDE_NUMBERS */
+
+.hero_slide_number {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #000;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+.hero_slide_number:not(:last-child) {
+    margin-right: 26px;
+}
+.hero_slide_number_section {
+    display: flex;
+    justify-content: center;
 }
