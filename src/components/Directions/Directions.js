@@ -16,32 +16,12 @@ import photo3_mobile_2x from "../../images/descriptions/descriptions-mobile/desc
 export default function Directions() {
   return (
     <div className={css.directions_section}>
-      <h2 className={css.directions_title}>Основні напрямки</h2>
-      <ul className={css.directions_list}>
-        <li className={css.directions_item}>
-          <p className={css.directions_number}>01</p>
-          <h3 className={css.directions_descr}>Дизайн інтерєру</h3>
-          <picture>
-            <source
-              srcset={`${photo1} 1x, ${photo1_2x} 2x`}
-              media="(min-width: 1200px)"
-            />
-            <source
-              srcset={`${photo1_tablet} 1x, ${photo1_tablet_2x} 2x`}
-              media="(min-width: 600px)"
-            />
-            <img
-              className={css.image}
-              src="#"
-              srcset={`${photo2_mobile} 1x, ${photo2_mobile_2x} 2x`}
-              alt="pop"
-            />
-          </picture>
-        </li>
-        <li className={css.directions_item}>
-          <p className={css.directions_number}>02</p>
-          <h3 className={css.directions_descr}>Виробництво меблів</h3>
-          <picture>
+      <div className="container">
+        <h2 className={css.directions_title}>Основні напрямки</h2>
+        <ul className={css.directions_list}>
+          <li className={css.directions_item}>
+            <p className={css.directions_number}>01</p>
+            <h3 className={css.directions_descr}>Дизайн інтерєру</h3>
             <picture>
               <source
                 srcset={`${photo1} 1x, ${photo1_2x} 2x`}
@@ -58,31 +38,53 @@ export default function Directions() {
                 alt="pop"
               />
             </picture>
-          </picture>
-        </li>
-        <li className={css.directions_item}>
-          <p className={css.directions_number}>03</p>
-          <h3 className={css.directions_descr}>Комплексне меблювання</h3>
-          <picture>
+          </li>
+          <li className={css.directions_item}>
+            <p className={css.directions_number}>02</p>
+            <h3 className={css.directions_descr}>Виробництво меблів</h3>
             <picture>
-              <source
-                srcset={`${photo3} 1x, ${photo3_2x} 2x`}
-                media="(min-width: 1200px)"
-              />
-              <source
-                srcset={`${photo3_tablet} 1x, ${photo3_tablet_2x} 2x`}
-                media="(min-width: 600px)"
-              />
-              <img
-                className={css.image}
-                src="#"
-                srcset={`${photo3_mobile} 1x, ${photo3_mobile_2x} 2x`}
-                alt="pop"
-              />
+              <picture>
+                <source
+                  srcset={`${photo1} 1x, ${photo1_2x} 2x`}
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset={`${photo1_tablet} 1x, ${photo1_tablet_2x} 2x`}
+                  media="(min-width: 600px)"
+                />
+                <img
+                  className={css.image}
+                  src="#"
+                  srcset={`${photo2_mobile} 1x, ${photo2_mobile_2x} 2x`}
+                  alt="pop"
+                />
+              </picture>
             </picture>
-          </picture>
-        </li>
-      </ul>
+          </li>
+          <li className={css.directions_item}>
+            <p className={css.directions_number}>03</p>
+            <h3 className={css.directions_descr}>Комплексне меблювання</h3>
+            <picture>
+              <picture>
+                <source
+                  srcset={`${photo3} 1x, ${photo3_2x} 2x`}
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset={`${photo3_tablet} 1x, ${photo3_tablet_2x} 2x`}
+                  media="(min-width: 600px)"
+                />
+                <img
+                  className={css.image}
+                  src="#"
+                  srcset={`${photo3_mobile} 1x, ${photo3_mobile_2x} 2x`}
+                  alt="pop"
+                />
+              </picture>
+            </picture>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
