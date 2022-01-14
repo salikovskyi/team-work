@@ -43,10 +43,10 @@
   .image {
     max-width: 270px;
   }
-  .directions_number{
+  .directions_number {
     margin-bottom: 40px;
   }
-  .directions_descr{
+  .directions_descr {
     margin-bottom: 30px;
   }
   .directions_item:not(:last-child) {
@@ -55,5 +55,29 @@
   .directions_title {
     font-size: 36px;
     line-height: 1.25;
+  }
+  .directions_list {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .directions_item {
+    border-left: 1px solid rgba(40, 43, 34, 0.2);
+    padding: 0 30px;
+    /* transform: rotate(90deg); */
+  }
+  .directions_item:last-child{
+    border-right: 1px solid rgba(40, 43, 34, 0.2);
+  }
+
+  .directions_list{
+    justify-content: center;
+  }
+  .image {
+    height: 244px;
+  }
+  .directions_item:not(:last-child) {
+    margin-bottom: 0px;
   }
 }
