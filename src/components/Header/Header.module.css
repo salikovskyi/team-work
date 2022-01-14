@@ -1,7 +1,6 @@
 .header_logo_img {
   width: 100px;
   height: 44px;
-  margin-bottom: 15px;
 }
 .header {
   padding-top: 15px;
@@ -9,6 +8,7 @@
   padding-right: 0;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 15px;
 }
 .header_list {
   display: flex;
@@ -17,6 +17,49 @@
   text-decoration: none;
   font-family: "Raleway", sans-serif;
 }
-/* .burger_icon {
-    margin-left: 60px;
-} */
+.burger_icon {
+  width: 34px;
+  height: 34px;
+}
+
+/* display: none on mobile */
+.header_number {
+  display: none;
+}
+.header_social_list {
+  display: none;
+}
+.header_phone_icon{
+  display: none;
+}
+
+
+
+/* MEDIA */
+@media screen and (min-width: 600px) {
+  .header_logo_img {
+    width: 122px;
+    height: 53px;
+  }
+  .header_number {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    margin-right: 55px;
+  }
+  .header_auth_nav {
+    display: flex;
+    align-items: center;
+  }
+  .header_social_list {
+    display: flex;
+    margin-right: 55px;
+  }
+  .header_social_item:not(:last-child) {
+    margin-right: 18px;
+  }
+  .header_phone_icon {
+    display: block;
+    margin-right: 12px;
+  }
+}
