@@ -4,7 +4,8 @@
 }
 .header {
   display: flex;
-  padding: 20px;
+  padding-right: 0;
+  justify-content: space-between;
 }
 .header_list {
   display: flex;
@@ -13,3 +14,6 @@
   text-decoration: none;
   font-family: "Raleway", sans-serif;
 }
+/* .burger_icon {
+    margin-left: 60px;
+} */
