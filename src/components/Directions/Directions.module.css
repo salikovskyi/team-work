@@ -26,7 +26,9 @@
 .directions_list {
   display: flex;
   /* justify-content: space-between; */
-  flex-direction: column;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .directions_item:not(:last-child) {
@@ -35,4 +37,23 @@
 
 .image {
   width: 290px;
+}
+
+@media screen and (min-width: 640px) {
+  .image {
+    max-width: 270px;
+  }
+  .directions_number{
+    margin-bottom: 40px;
+  }
+  .directions_descr{
+    margin-bottom: 30px;
+  }
+  .directions_item:not(:last-child) {
+    margin-bottom: 60px;
+  }
+  .directions_title {
+    font-size: 36px;
+    line-height: 1.25;
+  }
 }
