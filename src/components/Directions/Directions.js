@@ -15,6 +15,7 @@ import photo3_mobile_2x from "../../images/descriptions/descriptions-mobile/desc
 
 export default function Directions() {
   return (
+    <div className="section_big">
     <div className={css.directions_section}>
       <div className="container">
         <h2 className={css.directions_title}>Основні напрямки</h2>
@@ -85,6 +86,7 @@ export default function Directions() {
           </li>
         </ul>
       </div>
+    </div>
     </div>
   );
 }
