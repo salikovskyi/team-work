@@ -4,8 +4,8 @@ import hero_2x from "../../images/hero/hero-mobile/hero-mobile2x.jpg";
 
 export default function Hero() {
   return (
+<div className={css.hero_section}>
     <div className="container">
-      <div className={css.hero_section}>
         <h1 className={css.hero_title}>виробництво меблів</h1>
         <p className={css.hero_descr}>
           Ми виконуємо комплексне виготовлення корпусних меблів для житлових і
@@ -15,12 +15,11 @@ export default function Hero() {
         <button className={css.hero_button}>
           <span className={css.hero_button_text}>Обговорити проект</span>
         </button>
-        {/* <span className={css.underline}></span> */}
         <hr className={css.hero_button_underline}></hr>
         <div className={css.hero_slide_number_section}>
-        <p className={css.hero_slide_number}>1</p>
-        <p className={css.hero_slide_number}>2</p>
-        <p className={css.hero_slide_number}>3</p>
+        <button className={css.hero_slide_number}>1</button>
+        <button className={css.hero_slide_number}>2</button>
+        <button className={css.hero_slide_number}>3</button>
         </div>
       </div>
     </div>
