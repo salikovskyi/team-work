@@ -3,6 +3,7 @@
   height: 44px;
 }
 .header {
+  padding-top: 15px;
   display: flex;
   padding-right: 0;
   justify-content: space-between;

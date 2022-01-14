@@ -1,6 +1,6 @@
 import css from './Hero.module.css'
-
-
+import hero_1x from '../../images/hero/hero-mobile/hero-mobile.jpg'
+import hero_2x from '../../images/hero/hero-mobile/hero-mobile2x.jpg'
 
 
 
