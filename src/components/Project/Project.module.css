@@ -11,6 +11,7 @@
   display: flex;
   border-top: 1px solid rgba(40, 43, 34, 0.2);
   padding: 30px 0;
+  justify-content: center;
 }
 
 .project_item_div:last-child {
