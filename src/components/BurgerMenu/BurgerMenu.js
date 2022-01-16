@@ -1,6 +1,6 @@
 import css from './BurgerMenu.module.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 import Hamburger from 'hamburger-react';
 
