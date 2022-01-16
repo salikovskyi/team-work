@@ -1,0 +1,194 @@
+.hero_section {
+  padding-top: 70px;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2) -13.19%,
+      rgba(0, 0, 0, 0.85) 94.01%
+    ),
+    url(../../images/hero/hero-mobile/hero-mobile.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 15px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) -13.19%,
+        rgba(0, 0, 0, 0.85) 94.01%
+      ),
+      url(../../images/hero/hero-mobile/hero-mobile2x.jpg);
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .hero_section {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) -13.19%,
+        rgba(0, 0, 0, 0.85) 94.01%
+      ),
+      url(../../images/hero/hero-tablet/hero-tablet.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.2) -13.19%,
+          rgba(0, 0, 0, 0.85) 94.01%
+        ),
+        url(../../images/hero/hero-tablet/hero-tablet2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero_section {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) -13.19%,
+        rgba(0, 0, 0, 0.85) 94.01%
+      ),
+      url(../../images/hero/hero-desc/hero-desctop.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.2) -13.19%,
+          rgba(0, 0, 0, 0.85) 94.01%
+        ),
+        url(../../images/hero/hero-desc/hero-desctop2x.jpg);
+    }
+  }
+}
+
+.hero_title {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--bgc-color);
+}
+.hero_descr {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 145%;
+  text-align: center;
+  margin-top: 28px;
+  color: var(--bgc-color);
+  margin-bottom: 30px;
+}
+.hero_button {
+  display: flex;
+  justify-content: center;
+  padding: 22px 56px;
+  width: 290px;
+  height: 60px;
+  margin: 0 auto;
+  border: none;
+  color: #fff;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
+.hero_button_text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+}
+.hero_button_underline {
+  border: none;
+  height: 1px;
+  background: #fff;
+  margin-top: 62px;
+  margin-bottom: 15px;
+  border-radius: 1px;
+  opacity: 0.4;
+}
+
+/* ARROWS */
+.hero_arrow_list {
+  display: none;
+}
+/* SLIDE_NUMBERS */
+
+.hero_slide_number {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  opacity: 0.4;
+  border: 1px solid #fff;
+  background-color: transparent;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s;
+}
+.hero_slide_number:hover {
+  opacity: 1;
+}
+.hero_slide_number:not(:last-child) {
+  margin-right: 26px;
+}
+.hero_slide_number_section {
+  display: flex;
+  justify-content: center;
+}
+
+/* MEDIA */
+
+@media screen and (min-width: 640px) {
+  .hero_title {
+    font-size: 56px;
+    max-width: 446px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .hero_button {
+    margin-top: 60px;
+  }
+  .hero_title {
+    font-size: 56px;
+  }
+  .hero_descr {
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 537px;
+    margin: 0 auto;
+  }
+  .hero_button_underline {
+    margin-top: 120px;
+  }
+  .hero_arrow_list {
+    display: flex;
+  }
+  .hero_arrow_item:not(:last-child) {
+    margin-right: 15px;
+  }
+  .hero_slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 45px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+}
