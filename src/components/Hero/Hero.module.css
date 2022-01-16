@@ -1,11 +1,71 @@
 .hero_section {
   padding-top: 70px;
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.2) -13.19%, rgba(0, 0, 0, 0.85) 94.01%)
-  ,
-  url(../../images/hero/hero-mobile/hero-mobile.jpg);
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2) -13.19%,
+      rgba(0, 0, 0, 0.85) 94.01%
+    ),
+    url(../../images/hero/hero-mobile/hero-mobile.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding-bottom: 15px;
-      background-size: cover;
-    background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) -13.19%,
+        rgba(0, 0, 0, 0.85) 94.01%
+      ),
+      url(../../images/hero/hero-mobile/hero-mobile2x.jpg);
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .hero_section {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) -13.19%,
+        rgba(0, 0, 0, 0.85) 94.01%
+      ),
+      url(../../images/hero/hero-tablet/hero-tablet.jpg);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.2) -13.19%,
+          rgba(0, 0, 0, 0.85) 94.01%
+        ),
+        url(../../images/hero/hero-tablet/hero-tablet2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero_section {
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) -13.19%,
+        rgba(0, 0, 0, 0.85) 94.01%
+      ),
+      url(../../images/hero/hero-desc/hero-desctop.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0.2) -13.19%,
+          rgba(0, 0, 0, 0.85) 94.01%
+        ),
+        url(../../images/hero/hero-desc/hero-desctop2x.jpg);
+    }
+  }
 }
 
 .hero_title {
@@ -54,9 +114,12 @@
   margin-bottom: 15px;
   border-radius: 1px;
   opacity: 0.4;
-  
 }
 
+/* ARROWS */
+.hero_arrow_list {
+  display: none;
+}
 /* SLIDE_NUMBERS */
 
 .hero_slide_number {
@@ -75,10 +138,10 @@
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  transition: all 0.3s
+  transition: all 0.3s;
 }
 .hero_slide_number:hover {
-    opacity: 1 ;
+  opacity: 1;
 }
 .hero_slide_number:not(:last-child) {
   margin-right: 26px;
@@ -88,15 +151,44 @@
   justify-content: center;
 }
 
-
-
-
-
-
 /* MEDIA */
 
 @media screen and (min-width: 640px) {
   .hero_title {
     font-size: 56px;
+    max-width: 446px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
+  .hero_button {
+    margin-top: 60px;
+  }
+  .hero_title {
+    font-size: 56px;
+  }
+  .hero_descr {
+    font-size: 18px;
+    line-height: 150%;
+    max-width: 537px;
+    margin: 0 auto;
+  }
+  .hero_button_underline {
+    margin-top: 120px;
+  }
+  .hero_arrow_list {
+    display: flex;
+  }
+  .hero_arrow_item:not(:last-child) {
+    margin-right: 15px;
+  }
+  .hero_slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 45px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
 }
