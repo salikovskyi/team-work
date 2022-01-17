@@ -4,6 +4,8 @@ import Directions from './components/Directions/Directions';
 import Provide from'./components/Provide/Provide'
 import Hero from './components/Hero/Hero'
 import Project from './components/Project/Project';
+import Advantages from './components/Advantages/Advantages';
+import Discuss from './components/Discuss/Discuss';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Directions/>
       <Provide/>
       <Project/>
+      <Advantages/>
+      <Discuss/>
     </div>
   );
 }

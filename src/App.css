@@ -42,3 +42,19 @@
   }
 }
 
+.button {
+  display: flex;
+  justify-content: center;
+  padding: 22px 56px;
+  width: 290px;
+  height: 60px;
+  margin: 0 auto;
+  border: none;
+  color: #fff;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+}
