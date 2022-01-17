@@ -4,7 +4,7 @@ import LeftArrow from "../svg/LeftArrow/LeftArrow";
 import Backhround from "../../images/project/project1.jpg";
 import { useRef } from "react";
 
-export default function Hero() {
+export default function Hero() { 
   const slide = useRef();
 
   const onClick = (e) => {

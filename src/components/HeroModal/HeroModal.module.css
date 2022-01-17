@@ -1,15 +1,19 @@
 .hero_modal {
     position: absolute;
-    right: 200%;
+    transition: all 0.3s;
+
+
+    /* right: 200%;
     transform: translateX(100%);
     top: 50px;
-    transition: all 0.3s;
+    transition: all 0.3s; */
 }
 
 .hero_modal_active {
-    background-color: #fff;
-    position: absolute;
+transition: all 0.3s;
+
+    /* position: absolute;
     transform: translateX(-100%);
     transition: all 0.3s;
-    z-index: 1000;
+    z-index: 1000; */
 }
