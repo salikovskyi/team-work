@@ -1,10 +1,15 @@
 import css from "./Discuss.module.css";
 import picture from "../../images/people/people-mobile.jpg";
+import picture2x from '../../images/people/people-mobile2x.jpg'
+import picture_desctop from '../../images/people/people-desctop.jpg'
+import picture_desctop2x from '../../images/people/people-desctop2x.jpg'
+import picture_tablet from '../../images/people/people-tablet.jpg'
+import picture_tablet2x from '../../images/people/people-tablet2x.jpg'
 
 export default function Discuss() {
   return (
     <div className={css.discuss_section}>
-      <div className="container section">
+      <div className={`container ${css.discuss_wrap}`}>
         <div>
           <h2 className={css.discuss_title}>Обговоримо ваш проект?</h2>
           <p className={css.discuss_descr}>
@@ -42,7 +47,23 @@ export default function Discuss() {
             </label>
           </form>
         </div>
-        {/* <img src={picture} alt="people" /> */}
+        <picture>
+              <source
+                srcset={`${picture_desctop} 1x, ${picture_desctop2x} 2x`}
+                media="(min-width: 1200px)"
+              />
+              <source
+                srcset={`${picture_tablet} 1x, ${picture_tablet2x} 2x`}
+                media="(min-width: 600px)"
+              />
+              <img
+                className={css.discuss_image}
+                src="#"
+                srcset={`${picture} 1x, ${picture2x} 2x`}
+                alt="pop"
+              />
+            </picture>
+        {/* <img src={picture} alt="people" className={css.discuss_image}/> */}
       </div>
     </div>
   );
