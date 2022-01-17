@@ -88,24 +88,7 @@
   color: var(--bgc-color);
   margin-bottom: 30px;
 }
-.hero_button {
-  display: flex;
-  justify-content: center;
-  padding: 22px 56px;
-  width: 290px;
-  height: 60px;
-  margin: 0 auto;
-  border: none;
-  color: #fff;
-  border-radius: 2px;
-  background-color: var(--accent-color);
-}
-.hero_button_text {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 100%;
-}
+
 .hero_button_underline {
   border: none;
   height: 1px;
