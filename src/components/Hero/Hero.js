@@ -52,40 +52,121 @@ export default function Hero() {
   // });
 
   // startSlide();
+  const tabsContent = document.querySelectorAll('#div')
+  const tabs = document.querySelectorAll('#button')
 
+   const hideTabContent = ()  =>{
+    tabsContent.forEach(item => {
+        item.classList.add('hide');
+        item.classList.remove('show', 'fade');
+    });
+    tabs.forEach(item => {
+    item.classList.remove('tabheader__item_active');
+});
+}
   console.log(slide);
   return (
-    <div className={css.hero_section} id="div" ref={slide}>
-      <div className="container">
-        <h1 className={css.hero_title}>виробництво меблів</h1>
-        <p className={css.hero_descr}>
-          Ми виконуємо комплексне виготовлення корпусних меблів для житлових і
-          комерційних приміщень, забезпечимо Вас якісним меблевим продуктом
-          власного виробництва.
-        </p>
-        <button className="button">Обговорити проект</button>
-        <hr className={css.hero_button_underline}></hr>
-        <div className={css.hero_slider}>
-          <ul className={css.hero_arrow_list}>
-            <li className={css.hero_arrow_item} onClick={onClick}>
-              <a href="#" className={css.hero_arrow_link}>
-                <LeftArrow />
-              </a>
-            </li>
-            <li className={css.hero_arrow_item} onClick={onClick}>
-              <a href="#" className={css.hero_arrow_link}>
-                <RightArrow />
-              </a>
-            </li>
-          </ul>
+    <>
+      <div className={css.hero_section} id="div" ref={slide}>
+        <div className="container">
+          <h1 className={css.hero_title}>виробництво меблів</h1>
+          <p className={css.hero_descr}>
+            Ми виконуємо комплексне виготовлення корпусних меблів для житлових і
+            комерційних приміщень, забезпечимо Вас якісним меблевим продуктом
+            власного виробництва.
+          </p>
+          <button className="button">Обговорити проект</button>
+          <hr className={css.hero_button_underline}></hr>
+          <div className={css.hero_slider}>
+            <ul className={css.hero_arrow_list}>
+              <li className={css.hero_arrow_item} onClick={onClick}>
+                <a href="#" className={css.hero_arrow_link}>
+                  <LeftArrow />
+                </a>
+              </li>
+              <li className={css.hero_arrow_item} onClick={onClick}>
+                <a href="#" className={css.hero_arrow_link}>
+                  <RightArrow />
+                </a>
+              </li>
+            </ul>
 
-          <div className={css.hero_slide_number_section}>
-            <button className={css.hero_slide_number}>1</button>
-            <button className={css.hero_slide_number}>2</button>
-            <button className={css.hero_slide_number}>3</button>
+            <div className={css.hero_slide_number_section}>
+              <button className={css.hero_slide_number} id="button">1</button>
+              <button className={css.hero_slide_number} id="button">2</button>
+              <button className={css.hero_slide_number} id="button">3</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+
+      <div className={css.hero_section} id="div" ref={slide}>
+        <div className="container">
+          <h1 className={css.hero_title}>SLIDE2</h1>
+          <p className={css.hero_descr}>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+            ipsa pariatur expedita tenetur a repellendus facilis in optio ipsum,
+            incidunt, suscipit reiciendis nesciunt non explicabo sed quaerat
+            aperiam ipsam sint.
+          </p>
+          <button className="button">Обговорити проект</button>
+          <hr className={css.hero_button_underline}></hr>
+          <div className={css.hero_slider}>
+            <ul className={css.hero_arrow_list}>
+              <li className={css.hero_arrow_item} onClick={onClick}>
+                <a href="#" className={css.hero_arrow_link}>
+                  <LeftArrow />
+                </a>
+              </li>
+              <li className={css.hero_arrow_item} onClick={onClick}>
+                <a href="#" className={css.hero_arrow_link}>
+                  <RightArrow />
+                </a>
+              </li>
+            </ul>
+
+            <div className={css.hero_slide_number_section}>
+              <button className={css.hero_slide_number}>1</button>
+              <button className={css.hero_slide_number}>2</button>
+              <button className={css.hero_slide_number}>3</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className={css.hero_section} id="div" ref={slide}>
+        <div className="container">
+          <h1 className={css.hero_title}>SLIDE3</h1>
+          <p className={css.hero_descr}>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum esse
+            quos tempore aliquam saepe veritatis itaque, ea ab laborum mollitia
+            aliquid iusto, veniam a illum velit, libero expedita cupiditate
+            recusandae?
+          </p>
+          <button className="button">Обговорити проект</button>
+          <hr className={css.hero_button_underline}></hr>
+          <div className={css.hero_slider}>
+            <ul className={css.hero_arrow_list}>
+              <li className={css.hero_arrow_item} onClick={onClick}>
+                <a href="#" className={css.hero_arrow_link}>
+                  <LeftArrow />
+                </a>
+              </li>
+              <li className={css.hero_arrow_item} onClick={onClick}>
+                <a href="#" className={css.hero_arrow_link}>
+                  <RightArrow />
+                </a>
+              </li>
+            </ul>
+
+            <div className={css.hero_slide_number_section}>
+              <button className={css.hero_slide_number}>1</button>
+              <button className={css.hero_slide_number}>2</button>
+              <button className={css.hero_slide_number}>3</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
   );
 }

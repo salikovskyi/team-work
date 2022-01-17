@@ -71,6 +71,8 @@ input[type="checkbox"]:checked::before {
 .discuss_button {
   margin-bottom: 25px;
   margin-top: 40px;
+  padding-right: 87.5px;
+  padding-left: 87.5px;
 }
 
 .checkbox_label {
@@ -106,12 +108,28 @@ input[type="checkbox"]:checked::before {
   .discuss_wrap{
     display: flex;
     /* margin-right: 0; */
+    padding-right: 0;
   }
   .discuss_image{
     margin-left: 0;
+    
     /* position: absolute; */
   }
   .discuss_section {
     padding-top: 0;
+  }
+  .discuss_text {
+    padding: 100px 0;
+  }
+  .discuss_attach{
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+  }
+  .discuss_attach_el{
+    margin-left: 12px;
+  }
+  .discuss_label{
+    width: 95%;
   }
 }

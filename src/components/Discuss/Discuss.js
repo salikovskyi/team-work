@@ -10,7 +10,7 @@ export default function Discuss() {
   return (
     <div className={css.discuss_section}>
       <div className={`container ${css.discuss_wrap}`}>
-        <div>
+        <div className={css.discuss_text}>
           <h2 className={css.discuss_title}>Обговоримо ваш проект?</h2>
           <p className={css.discuss_descr}>
             Заповніть форму і найближчим часом ми зв'яжемося з вами!
