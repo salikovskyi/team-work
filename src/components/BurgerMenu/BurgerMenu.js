@@ -1,7 +1,6 @@
-import css from "./BurgerMenu.module.css";
-import { useState, useEffect } from "react";
-import Hamburger from "hamburger-react";
-import HeroModal from "../HeroModal/HeroModal";
+import css from './BurgerMenu.module.css'
+import { useState } from 'react';
+import Hamburger from 'hamburger-react';
 
 const BurgerMenu = () => {
   const [showMenu, setShowMenu] = useState(false);
