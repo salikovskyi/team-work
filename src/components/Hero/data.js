@@ -2,14 +2,14 @@ const pictures = [
     {
       id: 1,
       image:
-        'https://res.cloudinary.com/diqqf3eq2/image/upload/v1595959131/person-2_ipcjws.jpg',
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg',
       title: 'ВИРОБНИЦТВО МЕБЛІВ',
       descr: 'Ми виконуємо комплексне виготовлення корпусних меблів для житлових ікомерційних приміщень, забезпечимо Вас якісним меблевим продуктомвласного виробництва.'
     },
     {
       id: 2,
       image:
-        'https://picsum.photos/200/300',
+        'https://htmlcolorcodes.com/assets/images/colors/pastel-blue-color-solid-background-1920x1080.png',
       title: 'SLIDE2 SLIDE2 Slide2',
       descr:
         'Gastropub sustainable tousled prism occupy. Viral XOXO roof party brunch actually, chambray listicle microdosing put a bird on it paleo subway tile squid umami.',
@@ -17,7 +17,7 @@ const pictures = [
     {
       id: 3,
       image:
-        'https://www.closetag.com/images/photo4.jpg',
+        'https://wallpapercave.com/wp/2wLZUxS.jpg',
       title: 'Slide3 Slide3 Slide3',
       descr:
         'Drinking vinegar polaroid street art echo park, actually semiotics next level butcher master cleanse hammock flexitarian ethical paleo.',
