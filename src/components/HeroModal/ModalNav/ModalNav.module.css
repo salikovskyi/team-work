@@ -1,0 +1,15 @@
+.header_link {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: var(--main-color);
+}
+.header_item:not(:last-child) {
+    margin-bottom: 25px;
+}
+.header_list {
+    margin-top: 10px;
+}

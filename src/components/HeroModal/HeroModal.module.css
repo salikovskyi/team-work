@@ -4,20 +4,17 @@
   transform: translateX(100%);
   top: 50px;
   transition: transform 500ms, visibility 250ms, opacity 250ms;
-
   opacity: 0;
   visibility: hidden;
   height: 0%;
-
   overflow: hidden;
 }
 
 .hero_logo_modal {
   position: absolute;
-    top: 16px;
-    margin-left: 17px;
-    width: 100px;
-    height: 44px;
+  top: 16px;
+  width: 100px;
+  height: 44px;
 }
 
 .hero_modal_active {
@@ -36,17 +33,3 @@
   transform: translateX(-100%);
   transition: transform 500ms, visibility 250ms, opacity 250ms;
 }
-
-/* position: absolute;
-
-top: 39%;
-left: 50%;
-transform: translateX(0);
-
-transition: all 0.3s;
-z-index: 1000;
-
-opacity: 1;
-visibility: visible;
-height: 50vh;
-width: 100vw; */
