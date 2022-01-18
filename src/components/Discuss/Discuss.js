@@ -8,8 +8,8 @@ import picture_tablet2x from '../../images/people/people-tablet2x.jpg'
 
 export default function Discuss() {
   return (
-    <div className={css.discuss_section}>
-      <div className={`container ${css.discuss_wrap}`}>
+    <div className={`${css.discuss_section} ${css.discuss_wrap}`}>
+      <div className='container'>
         <div className={css.discuss_text}>
           <h2 className={css.discuss_title}>Обговоримо ваш проект?</h2>
           <p className={css.discuss_descr}>
@@ -47,7 +47,9 @@ export default function Discuss() {
             </label>
           </form>
         </div>
-        <picture>
+      </div>
+      <div className={css.discuss_photo_div}>
+      <picture className={css.discuss_photo}>
               <source
                 srcset={`${picture_desctop} 1x, ${picture_desctop2x} 2x`}
                 media="(min-width: 1200px)"
@@ -63,8 +65,8 @@ export default function Discuss() {
                 alt="pop"
               />
             </picture>
-        {/* <img src={picture} alt="people" className={css.discuss_image}/> */}
-      </div>
+            </div>
     </div>
+    
   );
 }

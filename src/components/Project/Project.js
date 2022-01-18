@@ -2,8 +2,8 @@ import css from "./Project.module.css";
 
 export default function Project() {
   return (
-    <div className={css.project_section}>
-      <div className="container section">
+    <div className={`section ${css.project_section}`}>
+      <div className="container">
         <h2 className={css.project_title}>
           Проект Рінго Україна - створений виконувати об`єктні задачі
           комплексного меблювання житлових та комерційних приміщень.{" "}

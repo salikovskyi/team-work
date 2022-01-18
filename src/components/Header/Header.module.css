@@ -76,12 +76,12 @@
     display: none;
   }
   .header_item:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 26px;
   }
   .header_logo {
-    margin-right: 140px;
+    margin-right: 130px;
   }
   .header_list {
-    margin-right: 150px;
+    margin-right: 140px;
   }
 }

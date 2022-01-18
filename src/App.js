@@ -6,6 +6,7 @@ import Hero from './components/Hero/Hero'
 import Project from './components/Project/Project';
 import Advantages from './components/Advantages/Advantages';
 import Discuss from './components/Discuss/Discuss';
+import StagesWork from './components/StagesWork/StagesWork';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Project/>
       <Advantages/>
       <Discuss/>
+      <StagesWork/>
     </div>
   );
 }
