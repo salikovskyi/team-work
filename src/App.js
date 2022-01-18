@@ -7,8 +7,12 @@ import Project from './components/Project/Project';
 import Advantages from './components/Advantages/Advantages';
 import Discuss from './components/Discuss/Discuss';
 import StagesWork from './components/StagesWork/StagesWork';
+import { withSize } from 'react-sizeme';
 
-function App() {
+function App({size: {width}}) {
+
+  
+
   return (
     <div className="App">
       <Header/>
@@ -23,4 +27,4 @@ function App() {
   );
 }
 
-export default App;
+export default withSize()(App) ;

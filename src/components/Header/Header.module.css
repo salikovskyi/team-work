@@ -28,8 +28,12 @@
 .header_phone_icon {
   display: none;
 }
-.header_link {
+/* .header_link {
   display: none;
+} */
+
+.header_auth_nav {
+  z-index: 100;
 }
 
 /* MEDIA */
@@ -47,6 +51,7 @@
   .header_auth_nav {
     display: flex;
     align-items: center;
+
   }
   .header_social_list {
     display: flex;

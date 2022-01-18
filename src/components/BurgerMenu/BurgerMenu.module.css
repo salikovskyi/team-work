@@ -1,5 +1,7 @@
 .burger_icon {
   display: flex;
+  position: relative;
+  z-index: 100;
 }
 
 @media screen and (min-width: 1200px) {

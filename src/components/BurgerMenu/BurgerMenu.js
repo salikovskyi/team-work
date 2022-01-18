@@ -17,7 +17,7 @@ const BurgerMenu = () => {
           <Hamburger size={25} />
         </span>
       </nav>
-      {/* <HeroModal active={showMenu} setActive={setShowMenu} /> */}
+      <HeroModal active={showMenu} setActive={setShowMenu} />
     </div>
   );
 };
