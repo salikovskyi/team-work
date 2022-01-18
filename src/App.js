@@ -7,6 +7,7 @@ import Project from './components/Project/Project';
 import Advantages from './components/Advantages/Advantages';
 import Discuss from './components/Discuss/Discuss';
 import Stages from './components/Stages/Stages';
+import Present from './components/Present/Present';
 
 import { withSize } from 'react-sizeme';
 
@@ -21,6 +22,7 @@ function App({size: {width}}) {
       <Advantages/>
       <Discuss/>
       <Stages/>
+      <Present/>
     </div>
   );
 }
