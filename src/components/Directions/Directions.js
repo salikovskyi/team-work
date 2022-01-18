@@ -16,8 +16,8 @@ import photo3_mobile_2x from "../../images/descriptions/descriptions-mobile/desc
 export default function Directions() {
   return (
     <div className="section_big">
-    <div className={css.directions_section}>
-      <div className="container section">
+    <div className={`section ${css.directions_section}`}>
+      <div className="container">
         <h2 className={css.directions_title}>Основні напрямки</h2>
         <ul className={css.directions_list}>
           <li className={css.directions_item}>

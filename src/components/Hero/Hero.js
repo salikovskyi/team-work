@@ -18,7 +18,7 @@ const SliderWrapper = styled.div`
   background-repeat: no-repeat;
 `
 
-export default function Hero() {
+export default function Hero() { 
   const slide = useRef();
   const [activeSlide, setActiveSlide] = useState(pictures[0])
   

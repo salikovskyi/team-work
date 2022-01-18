@@ -12,6 +12,9 @@
   width: 80%;
   margin-bottom: 20px;
 }
+.discuss_photo {
+  display: contents;
+}
 
 .discuss_descr {
   font-size: 16px;
@@ -85,7 +88,7 @@ input[type="checkbox"]:checked::before {
   position: relative;
   display: block;
 }
-.discuss_label:not(:last-child){
+.discuss_label:not(:last-child) {
   margin-top: 25px;
 }
 .discuss_input {
@@ -100,19 +103,22 @@ input[type="checkbox"]:checked::before {
   background: transparent;
   transition: border-color 0.2s;
 }
- .discuss_image {
-   margin-left: -10px;
- }
+.discuss_image {
+  width: 100%;
+}
 
- @media screen and (min-width: 640px) {
-  .discuss_wrap{
+@media screen and (min-width: 640px) {
+  .discuss_wrap {
     display: flex;
     /* margin-right: 0; */
     padding-right: 0;
   }
-  .discuss_image{
+  .discuss_photo_div {
+    width: 100%;
+  }
+
+  .discuss_image {
     margin-left: 0;
-    
     /* position: absolute; */
   }
   .discuss_section {
@@ -121,15 +127,22 @@ input[type="checkbox"]:checked::before {
   .discuss_text {
     padding: 100px 0;
   }
-  .discuss_attach{
+  .discuss_attach {
     display: flex;
     margin-top: 25px;
     align-items: center;
   }
-  .discuss_attach_el{
+  .discuss_attach_el {
     margin-left: 12px;
   }
-  .discuss_label{
+  .discuss_label {
     width: 95%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .discuss_photo {
+    width: 800px;
+    height: 696px;
   }
 }

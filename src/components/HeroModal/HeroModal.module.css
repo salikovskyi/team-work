@@ -1,40 +1,52 @@
 .hero_modal {
-    position: absolute;
-    /* right: 200%; */
-    transform: translateX(100%);
-    top: 50px;
-    transition: all 0.3s;
+  position: absolute;
+  right: 200%;
+  transform: translateX(100%);
+  top: 50px;
+  transition: transform 500ms, visibility 250ms, opacity 250ms;
 
+  opacity: 0;
+  visibility: hidden;
+  height: 0%;
 
-    opacity: 0;
-    visibility: hidden;
-    height: 0%;
-  
-    overflow: hidden;
+  overflow: hidden;
+}
+
+.hero_logo_modal {
+  position: absolute;
+    top: 16px;
+    margin-left: 17px;
+    width: 100px;
+    height: 44px;
 }
 
 .hero_modal_active {
-
-
-
-    background-color: #fff;
-    position: absolute;
-   
-    transform: translateX(-82%);
-    transition: all 0.3s;
-    z-index: 1000;
-
-
-    opacity: 1;
-    visibility: visible;
-    height: 50vh;
-    width: 100%;
-
- 
-
+  background-color: #fff;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 100%;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 20px;
+  padding-top: 97px;
+  overflow-y: hidden;
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(-100%);
+  transition: transform 500ms, visibility 250ms, opacity 250ms;
 }
 
+/* position: absolute;
 
+top: 39%;
+left: 50%;
+transform: translateX(0);
 
+transition: all 0.3s;
+z-index: 1000;
 
-
+opacity: 1;
+visibility: visible;
+height: 50vh;
+width: 100vw; */

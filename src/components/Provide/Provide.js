@@ -8,8 +8,8 @@ import Wardrobe from "../svg/Wardrobe/Wardrobe";
 
 export default function Provide() {
   return (
-    <div className={css.provide_section}>
-      <div className="container section">
+    <div className={`section ${css.provide_section}`}>
+      <div className="container">
         <h2 className={css.provide_title}>Ми забезпечемо вас </h2>
 
         <ul className={css.provide_list}>
