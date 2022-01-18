@@ -24,6 +24,10 @@
       url(../../images/hero/hero-mobile/hero-mobile2x.jpg);
   }
 }
+.hero_button_btn {
+  padding-left: 72.5px;
+  padding-right: 72.5px;
+}
 
 @media screen and (min-width: 640px) {
   .hero_section {
@@ -153,7 +157,9 @@
     font-size: 18px;
     line-height: 150%;
     max-width: 537px;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
   }
   .hero_button_underline {
     margin-top: 120px;
@@ -180,12 +186,6 @@
   animation-name: fade;
   animation-duration: 1s;
 }
-
-.hide {
-  display: none;
-}
-
-
 
 @keyframes fade {
   from {
