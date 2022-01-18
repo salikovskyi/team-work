@@ -6,17 +6,11 @@ import Hero from './components/Hero/Hero'
 import Project from './components/Project/Project';
 import Advantages from './components/Advantages/Advantages';
 import Discuss from './components/Discuss/Discuss';
-<<<<<<< HEAD
-import StagesWork from './components/StagesWork/StagesWork';
+import Stages from './components/Stages/Stages';
+
 import { withSize } from 'react-sizeme';
 
 function App({size: {width}}) {
-
-  
-=======
-import Stages from './components/Stages/Stages';
->>>>>>> dev
-
   return (
     <div className="App">
       <Header/>
@@ -26,11 +20,7 @@ import Stages from './components/Stages/Stages';
       <Project/>
       <Advantages/>
       <Discuss/>
-<<<<<<< HEAD
-      <StagesWork/>
-=======
       <Stages/>
->>>>>>> dev
     </div>
   );
 }
