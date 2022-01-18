@@ -1,15 +1,40 @@
 .hero_modal {
     position: absolute;
-    right: 200%;
+    /* right: 200%; */
     transform: translateX(100%);
     top: 50px;
     transition: all 0.3s;
+
+
+    opacity: 0;
+    visibility: hidden;
+    height: 0%;
+  
+    overflow: hidden;
 }
 
 .hero_modal_active {
+
+
+
     background-color: #fff;
     position: absolute;
-    transform: translateX(-100%);
+   
+    transform: translateX(-82%);
     transition: all 0.3s;
     z-index: 1000;
+
+
+    opacity: 1;
+    visibility: visible;
+    height: 50vh;
+    width: 100%;
+
+ 
+
 }
+
+
+
+
+
