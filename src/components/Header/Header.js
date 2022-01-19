@@ -4,7 +4,7 @@ import Facebook from "../svg/Facebook/Facebook";
 import Instagram from "../svg/Instagram/Instagram";
 import HeroPhone from "../svg/HeroPhone/HeroPhone";
 import BurgerMenu from "../BurgerMenu/BurgerMenu";
-import HeaderNav from "../HeaderNav/HeaderNav";
+import HeaderNav from "../Header/HeaderNav/HeaderNav";
 import { useSize } from "../../context/SizeProvider";
 
 const inst = "https://www.instagram.com/?hl=ru";
