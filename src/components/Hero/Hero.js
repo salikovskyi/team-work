@@ -41,7 +41,7 @@ export default function Hero() {
       // console.log(`n`, n);
       setActiveSlide(pictures[n]);
       n++;
-    }, 5000);
+    }, 8000);
   }, []);
 
   const { image, title, descr, color, text_color } = activeSlide;
