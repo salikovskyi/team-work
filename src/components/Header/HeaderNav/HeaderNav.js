@@ -1,4 +1,6 @@
-import css from '../Header/Header.module.css'
+import css from '../Header.module.css'
+import Instagram from '../../svg/Instagram/Instagram'
+import Facebook from '../../svg/Facebook/Facebook'
 
 export default function HeaderNav () {
     return (

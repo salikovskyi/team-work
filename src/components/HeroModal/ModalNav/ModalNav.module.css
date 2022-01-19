@@ -1,15 +1,63 @@
 .header_link {
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: var(--main-color);
+}
+.header_item:not(:last-child) {
+  margin-bottom: 25px;
+}
+.header_list {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.modal_social_list {
+  display: flex;
+  margin-bottom: 134px;
+}
+.modal_social_item:not(:last-child) {
+  margin-right: 18px;
+}
+.modal_number {
+  font-family: "Roboto", sans-serif;
+  align-items: flex-end;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+}
+.modal_phoneNumber_div {
+  display: flex;
+  align-items: center;
+}
+.modal_button_btn {
+  padding-left: 64.5px;
+  padding-right: 61.5px;
+  margin-top: 31px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+@media screen and (min-width: 640px) {
+  .header_link {
     text-decoration: none;
     font-family: "Raleway", sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 100%;
-    color: var(--main-color);
-}
-.header_item:not(:last-child) {
-    margin-bottom: 25px;
-}
-.header_list {
-    margin-top: 10px;
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  .modal_social_list {
+    display: none;
+  }
+  .modal_phoneNumber_div {
+    display: none;
+  }
+  .modal_button_btn {
+    display: none;
+  }
 }
