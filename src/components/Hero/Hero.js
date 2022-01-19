@@ -17,27 +17,50 @@ const SliderWrapper = styled.div`
   padding-bottom: 15px;
   background-size: cover;
   background-repeat: no-repeat;
-  transition: all 0.3s;
+  transition: all 0.7s;
+`;
+
+const Button = styled.button`
+  background-color: ${(props) => {
+    return props.color;
+  }};
+  color: ${(props) => {
+    return props.text_color;
+  }};
 `;
 
 export default function Hero() {
-  const slide = useRef();
   const [activeSlide, setActiveSlide] = useState(pictures[0]);
+  // console.log(activeSlide);x
+  useEffect(() => {
+    let n = 0;
+    setInterval(() => {
+      if (n === pictures.length) {
+        n = 0;
+      }
+      // console.log(`n`, n);
+      setActiveSlide(pictures[n]);
+      n++;
+    }, 5000);
+  }, []);
 
-  const { image, title, descr } = activeSlide;
+  const { image, title, descr, color, text_color } = activeSlide;
   return (
     <SliderWrapper
       url={image}
       className={css.hero_section}
       id="div"
-      ref={slide}
     >
       <div className="container">
         <h1 className={css.hero_title}>{title}</h1>
         <p className={css.hero_descr}>{descr}</p>
-        <button className={`button ${css.hero_button_btn}`}>
+        <Button
+          color={color}
+          text_color={text_color}
+          className={`button ${css.hero_button_btn}`}
+        >
           Обговорити проект
-        </button>
+        </Button>
         <hr className={css.hero_button_underline}></hr>
         <div className={css.hero_slider}>
           <ul className={css.hero_arrow_list}>

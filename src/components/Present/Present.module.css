@@ -4,7 +4,12 @@
 }
 .present_section {
     background-color: var(--secondary-bgc-color);
+   
 }
+/* .present_border{
+    border: 1px solid rgba(40, 43, 34, 1);
+    border-radius: 40%;
+} */
 .present_title {
   font-weight: 600;
   font-size: 24px;
