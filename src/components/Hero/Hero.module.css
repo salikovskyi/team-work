@@ -2,6 +2,12 @@
 .hero_button_btn {
   padding-left: 72.5px;
   padding-right: 72.5px;
+  /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;*/
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; 
+}
+.hero{
+  position: relative;
 }
 
 /* .hero_section::before {
@@ -12,8 +18,8 @@
   width: 100%;
   height: 100%;
   background-color: black;
-  opacity: 1;
-  z-index: -1;
+  opacity: 0.3;
+  z-index: 1;
 
 } */
 
@@ -69,6 +75,7 @@
   text-align: center;
   text-transform: uppercase;
   color: var(--bgc-color);
+  /* z-index: 1000; */
 }
 .hero_descr {
   font-style: normal;
@@ -183,3 +190,4 @@
     opacity: 1;
   }
 }
+
