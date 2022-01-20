@@ -46,6 +46,7 @@ export default function Hero() {
 
   const { image, title, descr, color, text_color } = activeSlide;
   return (
+    <div className={css.hero}>
     <SliderWrapper
       url={image}
       className={css.hero_section}
@@ -90,5 +91,6 @@ export default function Hero() {
         </div>
       </div>
     </SliderWrapper>
+    </div>
   );
 }

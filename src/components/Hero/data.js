@@ -16,7 +16,7 @@ const pictures = [
       descr:
         'Gastropub sustainable tousled prism occupy. Viral XOXO roof party brunch actually, chambray listicle microdosing put a bird on it paleo subway tile squid umami.',
         color:'white',
-        text_color: '#95D9F2'
+        text_color: '#066659'
     },
     {
       id: 3,
@@ -25,8 +25,8 @@ const pictures = [
       title: 'Slide3 Slide3 Slide3',
       descr:
         'Drinking vinegar polaroid street art echo park, actually semiotics next level butcher master cleanse hammock flexitarian ethical paleo.',
-        color:'white',
-        text_color: '#E0BBE4'
+        color:'#F3F5ED',
+        text_color: '#066659'
     },
   ];
   
