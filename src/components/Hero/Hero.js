@@ -6,15 +6,13 @@ import styled from "styled-components";
 import pictures from "./data";
 
 const SliderWrapper = styled.div`
-  background-image: url(${(props) => {
-    // console.log(props);
-    return props.url;
-  }});
+  background-image: url(${props => props.url});
   padding-top: 70px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 15px;
+  min-height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
   transition: all 0.7s;
@@ -27,6 +25,8 @@ const Button = styled.button`
   color: ${(props) => {
     return props.text_color;
   }};
+  position: relative;
+  z-index: 100000;
 `;
 
 export default function Hero() {
@@ -47,50 +47,46 @@ export default function Hero() {
   const { image, title, descr, color, text_color } = activeSlide;
   return (
     <div className={css.hero}>
-    <SliderWrapper
-      url={image}
-      className={css.hero_section}
-      id="div"
-    >
-      <div className="container">
-        <h1 className={css.hero_title}>{title}</h1>
-        <p className={css.hero_descr}>{descr}</p>
-        <Button
-          color={color}
-          text_color={text_color}
-          className={`button ${css.hero_button_btn}`}
-        >
-          Обговорити проект
-        </Button>
-        <hr className={css.hero_button_underline}></hr>
-        <div className={css.hero_slider}>
-          <ul className={css.hero_arrow_list}>
-            <li className={css.hero_arrow_item}>
-              <a href="#" className={css.hero_arrow_link}>
-                <LeftArrow />
-              </a>
-            </li>
-            <li className={css.hero_arrow_item}>
-              <a href="#" className={css.hero_arrow_link}>
-                <RightArrow />
-              </a>
-            </li>
-          </ul>
+      <SliderWrapper url={image} className={css.hero_section} id="div">
+        <div className="container">
+          <h1 className={css.hero_title}>{title}</h1>
+          <p className={css.hero_descr}>{descr}</p>
+          <Button
+            color={color}
+            text_color={text_color}
+            className={`button ${css.hero_button_btn}`}
+          >
+            Обговорити проект
+          </Button>
+          <hr className={css.hero_button_underline}></hr>
+          <div className={css.hero_slider}>
+            <ul className={css.hero_arrow_list}>
+              <li className={css.hero_arrow_item}>
+                <a href="#" className={css.hero_arrow_link}>
+                  <LeftArrow />
+                </a>
+              </li>
+              <li className={css.hero_arrow_item}>
+                <a href="#" className={css.hero_arrow_link}>
+                  <RightArrow />
+                </a>
+              </li>
+            </ul>
 
-          <div className={css.hero_slide_number_section}>
-            {pictures.map((picture) => (
-              <button
-                key={picture.id}
-                className={css.hero_slide_number}
-                onClick={() => setActiveSlide(picture)}
-              >
-                {picture.id}
-              </button>
-            ))}
+            <div className={css.hero_slide_number_section}>
+              {pictures.map((picture) => (
+                <button
+                  key={picture.id}
+                  className={css.hero_slide_number}
+                  onClick={() => setActiveSlide(picture)}
+                >
+                  {picture.id}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-    </SliderWrapper>
+      </SliderWrapper>
     </div>
   );
 }
