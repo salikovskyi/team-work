@@ -13,8 +13,6 @@ const SliderWrapper = styled.div`
   background-repeat: no-repeat;
   padding-bottom: 15px;
   min-height: 500px;
-  background-size: cover;
-  background-repeat: no-repeat;
   transition: all 0.7s;
 `;
 
@@ -26,7 +24,7 @@ const Button = styled.button`
     return props.text_color;
   }};
   position: relative;
-  z-index: 100000;
+  z-index: 10;
 `;
 
 export default function Hero() {

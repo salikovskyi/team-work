@@ -82,11 +82,11 @@
   color: var(--bgc-color);
   /* z-index: 1000; */
   position: relative;
-  z-index: 100000;
+  z-index: 10;
 }
 .hero_descr {
   position: relative;
-  z-index: 100000;
+  z-index: 10;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -131,7 +131,7 @@
   border-radius: 50px;
   transition: all 0.3s;
   position: relative;
-  z-index: 100000;
+  z-index: 10;
   
 }
 .hero_slide_number:hover {
@@ -179,7 +179,7 @@
   }
   .hero_arrow_item {
     position: relative;
-  z-index: 100000;
+  z-index: 10;
   }
   .hero_slider {
     display: flex;
