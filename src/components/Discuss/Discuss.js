@@ -48,24 +48,20 @@ export default function Discuss() {
           </form>
         </div>
       </div>
-      <div className={css.discuss_photo_div}>
       <picture className={css.discuss_photo}>
               <source
-                srcset={`${picture_desctop} 1x, ${picture_desctop2x} 2x`}
+                srcset={`${picture_desctop}`}
                 media="(min-width: 1200px)"
               />
               <source
-                srcset={`${picture_tablet} 1x, ${picture_tablet2x} 2x`}
+                srcset={`${picture_tablet}`}
                 media="(min-width: 600px)"
               />
               <img
-                className={css.discuss_image}
-                src="#"
-                srcset={`${picture} 1x, ${picture2x} 2x`}
+                src={picture}
                 alt="pop"
               />
             </picture>
-            </div>
     </div>
     
   );
