@@ -1,12 +1,12 @@
 <svg width="64" height="86" viewBox="0 0 64 86" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d_238_563)">
-<path d="M46.5781 7.05933L29.7031 10.9875V55.0125V58.9968L46.5781 55.0593V7.05933Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M46.5781 7.05933V7.01245H17.4219V55.0124H29.7031" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M35.5625 34.4439V29.3064" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M46.5781 7.05933L29.7031 10.9875V55.0125V58.9968L46.5781 55.0593V7.05933Z" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M46.5781 7.05933V7.01245H17.4219V55.0124H29.7031" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+<path d="M35.5625 34.4439V29.3064" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
 </g>
 <defs>
-<filter id="filter0_d_238_563" x="-13" y="-2" width="90" height="90" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<filter id="filter0_d_238_563" x="-13" y="-2" width="90" height="90" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+<feFlood floodOpacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="10"/>
 <feGaussianBlur stdDeviation="7.5"/>

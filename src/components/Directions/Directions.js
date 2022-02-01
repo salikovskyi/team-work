@@ -25,17 +25,17 @@ export default function Directions() {
             <h3 className={css.directions_descr}>Дизайн інтерєру</h3>
             <picture>
               <source
-                srcset={`${photo1} 1x, ${photo1_2x} 2x`}
+                srcSet={`${photo1} 1x, ${photo1_2x} 2x`}
                 media="(min-width: 1200px)"
               />
               <source
-                srcset={`${photo1_tablet} 1x, ${photo1_tablet_2x} 2x`}
+                srcSet={`${photo1_tablet} 1x, ${photo1_tablet_2x} 2x`}
                 media="(min-width: 600px)"
               />
               <img
                 className={css.image}
                 src="#"
-                srcset={`${photo2_mobile} 1x, ${photo2_mobile_2x} 2x`}
+                srcSet={`${photo2_mobile} 1x, ${photo2_mobile_2x} 2x`}
                 alt="pop"
               />
             </picture>
@@ -46,17 +46,17 @@ export default function Directions() {
             <picture>
               <picture>
                 <source
-                  srcset={`${photo1} 1x, ${photo1_2x} 2x`}
+                  srcSet={`${photo1} 1x, ${photo1_2x} 2x`}
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset={`${photo1_tablet} 1x, ${photo1_tablet_2x} 2x`}
+                  srcSet={`${photo1_tablet} 1x, ${photo1_tablet_2x} 2x`}
                   media="(min-width: 600px)"
                 />
                 <img
                   className={css.image}
                   src="#"
-                  srcset={`${photo2_mobile} 1x, ${photo2_mobile_2x} 2x`}
+                  srcSet={`${photo2_mobile} 1x, ${photo2_mobile_2x} 2x`}
                   alt="pop"
                 />
               </picture>
@@ -68,17 +68,17 @@ export default function Directions() {
             <picture>
               <picture>
                 <source
-                  srcset={`${photo3} 1x, ${photo3_2x} 2x`}
+                  srcSet={`${photo3} 1x, ${photo3_2x} 2x`}
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset={`${photo3_tablet} 1x, ${photo3_tablet_2x} 2x`}
+                  srcSet={`${photo3_tablet} 1x, ${photo3_tablet_2x} 2x`}
                   media="(min-width: 600px)"
                 />
                 <img
                   className={css.image}
                   src="#"
-                  srcset={`${photo3_mobile} 1x, ${photo3_mobile_2x} 2x`}
+                  srcSet={`${photo3_mobile} 1x, ${photo3_mobile_2x} 2x`}
                   alt="pop"
                 />
               </picture>

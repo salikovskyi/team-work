@@ -1,0 +1,52 @@
+.info_logo {
+  width: 100px;
+  margin-bottom: 30px;
+}
+
+.network {
+  display: flex;
+  align-items: center;
+  margin-bottom: 53px;
+}
+.social_network {
+  font-size: 14px;
+  color: #282b22;
+  opacity: 0.5;
+}
+
+.link {
+  margin-left: 13px;
+}
+
+.info_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 52px;
+}
+
+.info_item {
+  font-size: 16px;
+  line-height: 1;
+  color: #282b22;
+  margin-bottom: 20px;
+  width: 50%;
+}
+
+.info_number {
+  display: flex;
+  align-items: center;
+  margin-bottom: 26px;
+}
+.num {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #3d4a39;
+}
+
+.info_button {
+    padding: 22px 56.5px
+}
