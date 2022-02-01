@@ -34,11 +34,17 @@ export default function Make() {
     prevArrow: <PrevArrow />,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1280,
         settings: {
           arrows: false,
-          // centerMode: true,
-          // centerPadding: "40px",
+          slidesToShow: 1,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          arrows: false,
           slidesToShow: 1,
           dots: true,
         },
