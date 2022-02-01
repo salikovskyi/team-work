@@ -50,11 +50,11 @@ export default function Discuss() {
       </div>
       <picture className={css.discuss_photo}>
               <source
-                srcset={`${picture_desctop}`}
+                srcSet={`${picture_desctop}`}
                 media="(min-width: 1200px)"
               />
               <source
-                srcset={`${picture_tablet}`}
+                srcSet={`${picture_tablet}`}
                 media="(min-width: 600px)"
               />
               <img

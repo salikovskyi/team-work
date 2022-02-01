@@ -18,7 +18,7 @@ const images = [
       {
         id: 3,
         image:
-          'https://images.unsplash.com/photo-1489171078254-c3365d6e359f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80',
+          'https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80',
         descr: 'Квартира ЖК Перемога',
         etap: '2 етап',
   
@@ -29,6 +29,14 @@ const images = [
           'https://images.unsplash.com/photo-1538944570562-2c9cb7857097?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
         descr: 'Квартира ЖК Вирій',
         etap: '1 етап',
+  
+      },
+      {
+        id: 5,
+        image:
+          'https://images.unsplash.com/photo-1601760561441-16420502c7e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+        descr: 'Квартира ЖК Хрущ',
+        etap: 'Фінальний етап',
   
       },
   ];
