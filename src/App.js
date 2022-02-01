@@ -10,6 +10,7 @@ import Stages from './components/Stages/Stages';
 import Present from './components/Present/Present';
 import Make from './components/Make/Make';
 import Questions from './components/Questions/Questions';
+import Info from './components/Info/Info'
 
 import { withSize } from 'react-sizeme';
 
@@ -27,6 +28,7 @@ function App({size: {width}}) {
       <Present/>
       <Make/>
       <Questions/>
+      <Info/>
     </div>
   );
 }
