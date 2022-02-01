@@ -1,7 +1,5 @@
 import css from "./Hero.module.css";
-import RightArrow from "../svg/RightArrow/RIghtArrow";
-import LeftArrow from "../svg/LeftArrow/LeftArrow";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 import pictures from "./data";
 
@@ -58,7 +56,7 @@ export default function Hero() {
           </Button>
           <hr className={css.hero_button_underline}></hr>
           <div className={css.hero_slider}>
-            <ul className={css.hero_arrow_list}>
+            {/* <ul className={css.hero_arrow_list}>
               <li className={css.hero_arrow_item}>
                 <a href="#" className={css.hero_arrow_link}>
                   <LeftArrow />
@@ -69,7 +67,7 @@ export default function Hero() {
                   <RightArrow />
                 </a>
               </li>
-            </ul>
+            </ul> */}
 
             <div className={css.hero_slide_number_section}>
               {pictures.map((picture) => (
