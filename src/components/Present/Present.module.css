@@ -3,8 +3,7 @@
   padding-right: 86.5px;
 }
 .present_section {
-    background-color: var(--secondary-bgc-color);
-   
+  background-color: var(--secondary-bgc-color);
 }
 /* .present_border{
     border: 1px solid rgba(40, 43, 34, 1);
@@ -18,6 +17,9 @@
   text-transform: uppercase;
   color: #282b22;
   margin-bottom: 20px;
+}
+.present_subtitle {
+  text-align: center;
 }
 
 .present_descr {
@@ -49,11 +51,25 @@
   }
 }
 
-@media screen and (min-width: 1200px){
-  .present_present{
-    display: block;
+@media screen and (min-width: 1200px) {
+  .present_present {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
   }
   .present_border {
-    display: flex ;
+    display: flex;
+    position: relative;
+  }
+  .present_left_svg {
+    position: absolute;
+    top: 203px;
+    left: 32px;
+  }
+  .present_right_svg {
+    position: absolute;
+    top: 204px;
+    left: 40px;
   }
 }
