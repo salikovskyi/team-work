@@ -27,7 +27,7 @@ export default function Questions() {
           </form>
         </div>
       </div>
-      <picture>
+      <picture className={css.questions_picture}>
           <source srcSet={` ${picture3}`} media="(min-width: 1200px)"/>
           <source srcSet={` ${picture2}`} media="(min-width: 600px)"/>
           <img src={picture} alt="" />
