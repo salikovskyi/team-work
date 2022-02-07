@@ -13,6 +13,7 @@ import Questions from './components/Questions/Questions';
 import Info from './components/Info/Info'
 
 import { withSize } from 'react-sizeme';
+import Footer from './components/Footer/Footer';
 
 function App({size: {width}}) {
   return (
@@ -29,6 +30,7 @@ function App({size: {width}}) {
       <Make/>
       <Questions/>
       <Info/>
+      <Footer/>
     </div>
   );
 }

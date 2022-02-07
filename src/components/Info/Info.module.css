@@ -94,6 +94,7 @@
   }
   .info_numberBtn {
     display: block;
+    min-width: 315px;
   }
   .wrapper_info {
     display: flex;
