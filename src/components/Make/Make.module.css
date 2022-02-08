@@ -1,0 +1,44 @@
+.title {
+    font-weight: 600;
+font-size: 46px;
+line-height: 1.25;
+text-transform: uppercase;
+color: #282B22;
+text-align: center;
+margin-bottom: 50px;
+}
+
+.image {
+    width: 300px;
+    margin: 0 auto;
+
+}
+
+.fDescr {
+    margin: 0 auto;
+    width: max-content;
+}
+
+.fEtap {
+    margin: 0 auto;
+    width: max-content;
+}
+
+@media screen and (min-width: 640px) {
+    .image {
+        width: 430px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .image {
+        width: 410px;
+    }
+}
+
+
+@media screen and (min-width: 1500px) {
+    .image {
+        width: 520px;
+    }
+}

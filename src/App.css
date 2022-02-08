@@ -1,3 +1,6 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 :root {
   --main-color: #282b22;
   --secondary-color: #3e4b3a;
@@ -14,11 +17,62 @@
 .section {
   padding: 80px 0;
 }
+.button {
+  display: flex;
+  justify-content: center;
+  padding: 22px 0;
+  margin: 0 auto;
+  border: none;
+  color: #fff;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  cursor: pointer;
+}
 
+.slide {
+  transform: scale(0.8);
+  transition: transform 300ms;
+  opacity: 0.5;
+}
+
+.activeSlide {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.arrow {
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px;
+  color: black;
+  position: absolute;
+  opacity: 0.4;
+  cursor: pointer;
+  z-index: 10;
+  transition: opacity 0.5s;
+}
+.arrow:hover {
+  background-color: black;
+  color: white;
+}
+.next {
+  right: 0%;
+  top: 50%;
+}
+
+.prev {
+  left: 0%;
+  top: 50%;
+}
 
 @media screen and (min-width: 320px) {
   .container {
-    max-width: 290px;
+    max-width: 320px;
+    padding: 0 10px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -26,19 +80,42 @@
 
 @media screen and (min-width: 640px) {
   .container {
-    max-width: 600px;
+    max-width: 640px;
+    /* padding-left: 20px; */
+    padding: 0 20px;
   }
-  .section{
-    padding: 100px 0;
+  .section {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
+
+  .next {
+    right: 20%;
+    top: 100%;
+  }
+
+  .prev {
+    left: 20%;
+    top: 100%;
+  }
+
+  .arrow {
+    background-color: black;
+    color: white;
+  }
+
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
   }
-  .section{
-    padding: 120px 0;
+  .section {
+    padding-top: 140px;
+    padding-bottom: 140px;
+  }
+
+  .arrow:hover {
+    opacity: 1;
   }
 }
-

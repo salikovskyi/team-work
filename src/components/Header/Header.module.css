@@ -28,8 +28,12 @@
 .header_phone_icon {
   display: none;
 }
-.header_link {
+/* .header_link {
   display: none;
+} */
+
+.header_auth_nav {
+  z-index: 100;
 }
 
 /* MEDIA */
@@ -47,6 +51,7 @@
   .header_auth_nav {
     display: flex;
     align-items: center;
+
   }
   .header_social_list {
     display: flex;
@@ -57,7 +62,7 @@
   }
   .header_phone_icon {
     display: block;
-    margin-right: 12px;
+    margin-right: 13px;
   }
 }
 
@@ -76,12 +81,12 @@
     display: none;
   }
   .header_item:not(:last-child) {
-    margin-right: 30px;
+    margin-right: 26px;
   }
   .header_logo {
-    margin-right: 140px;
+    margin-right: 130px;
   }
   .header_list {
-    margin-right: 150px;
+    margin-right: 140px;
   }
 }

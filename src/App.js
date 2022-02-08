@@ -4,8 +4,18 @@ import Directions from './components/Directions/Directions';
 import Provide from'./components/Provide/Provide'
 import Hero from './components/Hero/Hero'
 import Project from './components/Project/Project';
+import Advantages from './components/Advantages/Advantages';
+import Discuss from './components/Discuss/Discuss';
+import Stages from './components/Stages/Stages';
+import Present from './components/Present/Present';
+import Make from './components/Make/Make';
+import Questions from './components/Questions/Questions';
+import Info from './components/Info/Info'
 
-function App() {
+import { withSize } from 'react-sizeme';
+import Footer from './components/Footer/Footer';
+
+function App({size: {width}}) {
   return (
     <div className="App">
       <Header/>
@@ -13,8 +23,16 @@ function App() {
       <Directions/>
       <Provide/>
       <Project/>
+      <Advantages/>
+      <Discuss/>
+      <Stages/>
+      <Present/>
+      <Make/>
+      <Questions/>
+      <Info/>
+      <Footer/>
     </div>
   );
 }
 
-export default App;
+export default withSize()(App) ;

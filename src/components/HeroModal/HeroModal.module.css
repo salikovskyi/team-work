@@ -1,0 +1,57 @@
+.hero_modal {
+  /* position: absolute;
+  right: 200%;
+  transform: translateX(100%);
+  top: 50px;
+  transition: transform 500ms, visibility 250ms, opacity 250ms;
+  visibility: hidden;
+  height: 0%;
+  overflow: hidden; */
+  opacity: 0;
+  background-color: #fff;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 100%;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 20px;
+  padding-top: 97px;
+  overflow-y: hidden;
+  visibility: visible;
+}
+
+.hero_logo_modal {
+  position: absolute;
+  top: 16px;
+  width: 100px;
+  height: 44px;
+}
+
+.hero_modal_active {
+  opacity: 1;
+  transform: translateX(-100%);
+  transition: all 0.3s linear;
+}
+
+.hero_modal_closed {
+  opacity: 0;
+  left: 100%;
+  transform: translateX(100%);
+  transition: all 0.3s linear;
+}
+
+@media screen and (min-width: 640px) {
+  .hero_modal_active {
+    top: 85px;
+    left: 139%;
+  }
+  .hero_logo_modal {
+    display: none;
+  }
+  .hero_modal_active {
+    padding: 30px 26px;
+    transform: translateX(-87%);
+  }
+}
+

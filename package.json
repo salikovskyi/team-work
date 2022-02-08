@@ -2,25 +2,35 @@
   "name": "team-work",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://salikovskyi.github.io/team-work",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
+    "@react-icons/all-files": "^4.1.0",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
+    "gh-pages": "^3.2.3",
     "hamburger-react": "^2.4.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
     "react-scripts": "5.0.0",
+    "react-sizeme": "^3.0.2",
+    "react-slick": "^0.28.1",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.3.3",
     "web-vitals": "^2.1.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "netlify deploy -p"
   },
   "eslintConfig": {
     "extends": [
