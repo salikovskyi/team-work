@@ -30,7 +30,7 @@ export default function Questions() {
       <picture className={css.questions_picture}>
           <source srcSet={` ${picture3}`} media="(min-width: 1200px)"/>
           <source srcSet={` ${picture2}`} media="(min-width: 600px)"/>
-          <img src={picture} alt="" />
+          <img src={picture} alt="" className={css.questions_img}/>
       </picture>
       
     </div>

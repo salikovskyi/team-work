@@ -27,17 +27,15 @@ const Button = styled.button`
 
 export default function Hero() {
   const [activeSlide, setActiveSlide] = useState(pictures[0]);
-  // console.log(activeSlide);x
   useEffect(() => {
     let n = 0;
     setInterval(() => {
       if (n === pictures.length) {
         n = 0;
       }
-      // console.log(`n`, n);
       setActiveSlide(pictures[n]);
       n++;
-    }, 8000);
+    }, 3000);
   }, []);
 
   const { image, title, descr, color, text_color } = activeSlide;

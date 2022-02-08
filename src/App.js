@@ -11,8 +11,6 @@ import Present from './components/Present/Present';
 import Make from './components/Make/Make';
 import Questions from './components/Questions/Questions';
 import Info from './components/Info/Info'
-import Footer from './components/Footer/Footer'
-
 import { withSize } from 'react-sizeme';
 import Footer from './components/Footer/Footer';
 
