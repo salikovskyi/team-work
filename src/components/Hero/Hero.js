@@ -54,18 +54,6 @@ export default function Hero() {
           </Button>
           <hr className={css.hero_button_underline}></hr>
           <div className={css.hero_slider}>
-            {/* <ul className={css.hero_arrow_list}>
-              <li className={css.hero_arrow_item}>
-                <a href="#" className={css.hero_arrow_link}>
-                  <LeftArrow />
-                </a>
-              </li>
-              <li className={css.hero_arrow_item}>
-                <a href="#" className={css.hero_arrow_link}>
-                  <RightArrow />
-                </a>
-              </li>
-            </ul> */}
 
             <div className={css.hero_slide_number_section}>
               {pictures.map((picture) => (
