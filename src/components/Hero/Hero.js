@@ -27,17 +27,15 @@ const Button = styled.button`
 
 export default function Hero() {
   const [activeSlide, setActiveSlide] = useState(pictures[0]);
-  // console.log(activeSlide);x
   useEffect(() => {
     let n = 0;
     setInterval(() => {
       if (n === pictures.length) {
         n = 0;
       }
-      // console.log(`n`, n);
       setActiveSlide(pictures[n]);
       n++;
-    }, 8000);
+    }, 3000);
   }, []);
 
   const { image, title, descr, color, text_color } = activeSlide;
@@ -56,18 +54,6 @@ export default function Hero() {
           </Button>
           <hr className={css.hero_button_underline}></hr>
           <div className={css.hero_slider}>
-            {/* <ul className={css.hero_arrow_list}>
-              <li className={css.hero_arrow_item}>
-                <a href="#" className={css.hero_arrow_link}>
-                  <LeftArrow />
-                </a>
-              </li>
-              <li className={css.hero_arrow_item}>
-                <a href="#" className={css.hero_arrow_link}>
-                  <RightArrow />
-                </a>
-              </li>
-            </ul> */}
 
             <div className={css.hero_slide_number_section}>
               {pictures.map((picture) => (

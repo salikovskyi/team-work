@@ -60,6 +60,7 @@ export default function Discuss() {
               <img
                 src={picture}
                 alt="pop"
+                className={css.discuss_image}
               />
             </picture>
     </div>

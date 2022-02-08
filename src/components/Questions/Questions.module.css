@@ -66,6 +66,9 @@
   background: transparent;
   transition: border-color 0.2s;
 }
+.questions_img {
+  width: 100%;
+}
 
 @media screen and (min-width: 640px) {
   .questions_section {
@@ -74,6 +77,9 @@
     padding-right: 0;
   }
 
+  .questions_img{
+    width: max-content;
+  }
   .questions_section {
     padding-top: 0;
   }

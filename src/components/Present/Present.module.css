@@ -61,6 +61,7 @@
   .present_border {
     display: flex;
     position: relative;
+    justify-content: center;
   }
   .present_left_svg {
     position: absolute;
