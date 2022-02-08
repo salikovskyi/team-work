@@ -14,6 +14,7 @@ import Info from './components/Info/Info'
 import Footer from './components/Footer/Footer'
 
 import { withSize } from 'react-sizeme';
+import Footer from './components/Footer/Footer';
 
 function App({size: {width}}) {
   return (
